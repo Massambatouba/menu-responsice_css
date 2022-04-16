@@ -46,10 +46,10 @@ body{
 }
 /*POSITION*/
 .ralative{
-    position: absolute;
+    position: relative;
 }
 .absolute{
-    position: relative;
+    position: absolute;
 }
 .fixed{
     position: fixed;

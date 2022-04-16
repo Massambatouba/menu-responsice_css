@@ -6,15 +6,43 @@ nav#menu ul{
 nav#menu ul li:hover{
     background-color: white;
     color: black;
+  
 }
 nav#menu ul li{
     color: white;
 }
-nav#menu ul li{
+nav#menu ul li a{
     white-space: nowrap;
     height: 50px;
     line-height: 50px;
+    color: inherit;
+    text-decoration: inherit;
 }
+.relative{
+    position: relative;
+}
+/****Sous menu****/
+#menu ul ul{
+    display: none;
+}
+#menu ul ul li a{
+    width: 200px;
+}
+#menu ul li:hover ul{
+    display: block;
+}
+/****sous sous menu*****/
+#menu ul ul ul{
+    top: 0;
+    left: 240px;   
+}
+#menu ul li:hover ul ul{
+    display: none;
+} 
+#menu ul ul li:hover>ul{
+    display: block;
+    
+}   
 @media screen and (max-width: 700px){
     nav#menu > ul {
         display: flex;
@@ -27,5 +55,11 @@ nav#menu ul li{
     }
     #menu >ul>li:last-child{
         border: none;
+    }
+}
+@media   screen and (max-width: 800px) {
+    #menu ul li:nth-child(3) ul ul{
+        top: 0;
+        left: -240px; 
     }
 }
