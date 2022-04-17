@@ -115,3 +115,7 @@ ul{
     position: relative;
     top: 5px;
 }
+.burger-icon::after{
+    content: "\002630";
+    float: right;
+}
